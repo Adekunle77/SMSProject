@@ -19,12 +19,14 @@ class OpeningViewController: UIViewController {
     var textedNumbers = [TextedNumber]()
     
     private var textedRecipt = [Message]() {
-        didSet {
+        willSet {
             var alertMessage: AlertMessage
             alertMessage.message = viewModel.textedReceipt().message
             alertMessage.title = viewModel.textedReceipt().title
             Alert.showAlert(on: self, with: alertMessage.title, message: alertMessage.message)
-            
+        } 
+        didSet {
+            self.textedRecipt.removeAll()
         }
     }
     

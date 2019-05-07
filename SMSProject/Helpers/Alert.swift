@@ -21,12 +21,5 @@ struct Alert {
         }
     
     }
-    
-//    static func error(vc: UIViewController, message: String) {
-//        showAlert(on: vc, with: "Error", message: message)
-//    }
-//
-//    static func messageSent(vc: UIViewController, message: String) {
-//        showAlert(on: vc, with: "Message Sent", message: message)
-//    }
+
 }

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
 extension String {
     mutating func removeCharacter(index number: Int) {
          if self.count < number || number < 0 {
